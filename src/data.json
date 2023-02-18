@@ -1,0 +1,50 @@
+[
+    {
+      "Id": 22500,
+      "Name": "沉船戒指",
+      "PriceLow": 8000,
+      "PriceMid": 30000
+    },
+    {
+      "Id": 22501,
+      "Name": "沉船手镯",
+      "PriceLow": 9000,
+      "PriceMid": 30000
+    },
+    {
+      "Id": 22502,
+      "Name": "沉船耳饰",
+      "PriceLow": 10000,
+      "PriceMid": 30000
+    },
+    {
+      "Id": 22503,
+      "Name": "沉船项链",
+      "PriceLow": 13000,
+      "PriceMid": 30000
+    },
+    {
+      "Id": 22504,
+      "Name": "上等沉船戒指",
+      "PriceLow": 27000,
+      "PriceMid": 90000
+    },
+    {
+      "Id": 22505,
+      "Name": "上等沉船手镯",
+      "PriceLow": 28500,
+      "PriceMid": 90000
+    },
+    {
+      "Id": 22506,
+      "Name": "上等沉船耳饰",
+      "PriceLow": 30000,
+      "PriceMid": 90000
+    },
+    {
+      "Id": 22507,
+      "Name": "上等沉船项链",
+      "PriceLow": 34500,
+      "PriceMid": 90000
+    }
+  ]
