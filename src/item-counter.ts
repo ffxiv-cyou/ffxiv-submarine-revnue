@@ -111,7 +111,16 @@ export class ItemCounter {
             return;
         
         var shipName = match[1];
-        this.setShipName(shipName);
+
+        // 如果0039日志行先出现，则等会再解析
+        this.queueCleanup(Date.now());
+        if (this.buffer.empty()) {
+            setTimeout(() => {
+                this.setShipName(shipName);
+            }, 1000);
+        } else {
+            this.setShipName(shipName);
+        }
     }
 
     parseSystemLogMessage(instance: string, id: string, param0: string, param1: string, param2: string) {
@@ -154,15 +163,18 @@ export class ItemCounter {
 
     enqueueItem(id: number, amount: number) {
         var item = new ItemLog(id, amount);
-        console.log(item);
+        this.queueCleanup(item.date);
+        this.buffer.push_back(item);
+    }
+
+    queueCleanup(time: number) {
         while(!this.buffer.empty()) {
             var front = this.buffer.front();
             if (!front) break;
-            if (item.date - front.date > 5000)
+            if (time - front.date > 5000)
                 this.buffer.pop_front();
             else
                 break;
         }
-        this.buffer.push_back(item);
     }
 }

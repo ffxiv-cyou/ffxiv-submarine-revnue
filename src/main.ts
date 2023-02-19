@@ -40,7 +40,6 @@ document.getElementById("close")!.onclick = (evt) => {
 };
 
 addOverlayListener("LogLine", (msg) => {
-  // console.log(msg);
   counter.parseLogLines(msg.line);
 });
 
