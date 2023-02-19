@@ -16,5 +16,5 @@ a {
 }
 
 .value {
-  user-select: all !important;
+  cursor: pointer;
 }

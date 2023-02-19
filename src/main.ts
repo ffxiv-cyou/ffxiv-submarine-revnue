@@ -39,6 +39,10 @@ document.getElementById("close")!.onclick = (evt) => {
   evt.preventDefault();
 };
 
+totalNode.onclick = () => {
+  navigator.clipboard.writeText(totalNode.innerText);
+}
+
 addOverlayListener("LogLine", (msg) => {
   counter.parseLogLines(msg.line);
 });
