@@ -114,13 +114,9 @@ export class ItemCounter {
 
         // 如果0039日志行先出现，则等会再解析
         this.queueCleanup(Date.now());
-        if (this.buffer.empty()) {
-            setTimeout(() => {
-                this.setShipName(shipName);
-            }, 1000);
-        } else {
+        setTimeout(() => {
             this.setShipName(shipName);
-        }
+        }, 1000);
     }
 
     parseSystemLogMessage(instance: string, id: string, param0: string, param1: string, param2: string) {
