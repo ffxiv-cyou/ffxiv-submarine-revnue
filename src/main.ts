@@ -8,14 +8,18 @@ ItemData.forEach(item => {
   itemMap.set(item.Id, item);
 });
 
-var shipNode = document.getElementById("ship-name")!;
 var listNode = document.getElementById("item-list")!;
 var totalNode = document.getElementById("total-value")!;
 var rootNode = document.getElementById("app")!;
 
+var totalRevenue = 0;
+
 var counter = new ItemCounter((name, items) => {
-  shipNode.innerText = name;
-  listNode.innerHTML = "";
+  if (items.length === 0)
+    return;
+
+  var shipNode = document.createElement("div");
+  listNode.appendChild(shipNode);
 
   var totalVal = 0;
   items.forEach(item => {
@@ -23,25 +27,26 @@ var counter = new ItemCounter((name, items) => {
     if (info === undefined)
       return;
 
-    var root = document.createElement("div");
-    root.innerText = info.Name + " ×" + item.amount;
-    listNode.appendChild(root);
+    var itemNode = document.createElement("div");
+    itemNode.innerText = info.Name + " ×" + item.amount;
+    listNode.appendChild(itemNode);
 
     totalVal += (item.hq ? info.PriceMid : info.PriceLow) * item.amount;
   });
 
-  totalNode.innerText = totalVal.toString();
+  shipNode.innerText = name + ": " + totalVal.toString();
+
+  totalRevenue += totalVal;
+  totalNode.innerText = totalRevenue.toString();
   rootNode.classList.remove("hide");
 });
 
 document.getElementById("close")!.onclick = (evt) => {
   rootNode.classList.add("hide");
+  listNode.innerText = "";
+  totalRevenue = 0;
   evt.preventDefault();
 };
-
-totalNode.onclick = () => {
-  navigator.clipboard.writeText(totalNode.innerText);
-}
 
 addOverlayListener("LogLine", (msg) => {
   counter.parseLogLines(msg.line);
