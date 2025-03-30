@@ -34,6 +34,7 @@ button, input {
   box-shadow: .25px .25px 2px #aa8422, -.25px .25px 2px #aa8422, .25px -.25px 2px #aa8422, -.25px -.25px 2px #aa8422;
   color: #aa8422;
   text-shadow: none;
+  background: #ffffff;
 }
 
 a.button,
