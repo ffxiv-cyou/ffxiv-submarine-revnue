@@ -94,7 +94,7 @@ document.getElementById("test-cfg")!.onclick = (_) => {
     new Item(22502, false, 3),
   ]).then((res) => {
     console.log(res);
-    testOutput.classList = res.ok ? "success" : "fail";
+    testOutput.className = res.ok ? "success" : "fail";
     testOutput.innerText = res.body as unknown as string;
   })
     .catch((err) => testOutput.innerText = err.toString());
