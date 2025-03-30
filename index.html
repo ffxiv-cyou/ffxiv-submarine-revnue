@@ -7,8 +7,22 @@
   </head>
   <body>
     <div class="app" id="app">
-      <div><span id="ship-name">潜艇收益计算器 | 点击隐藏 </span><a href="#" id="close">&times;</a></div>
-      <div>总价: <span class="value" id="total-value">0</span></div>
+      <div>总收益：<span class="value" id="total-value">0</span> <button id="setting">设置</button><button href="#" id="close">隐藏</button></div>
+      <div class="config hide" id="config">
+        <div>
+          <label for="webhook">Webhook:</label>
+          <input type="text" id="webhook"/>
+        </div>
+        <div>
+          <label for="token">凭证:</label>
+          <input type="text" id="token"/>
+        </div>
+        <div class="btn">
+          <a class="button" href="https://ffxiv.cyou/pages/submarine/" target="_blank">查看帮助</a>
+          <button id="test-cfg">测试配置</button>
+          <button id="apply-cfg">应用</button></div>
+        <div id="test-output"></div>
+      </div>
       <div id="item-list"></div>
     </div>
     <script type="module" src="/src/main.ts"></script>

@@ -18,3 +18,32 @@ a {
 .value {
   cursor: pointer;
 }
+
+.fail {
+  text-shadow: .5px .5px 2px #FF5A2B, -.5px .5px 2px #FF5A2B, .5px -.5px 2px #FF5A2B, -.5px -.5px 2px #FF5A2B;
+}
+.success {
+  text-shadow: .5px .5px 2px #7BC431, -.5px .5px 2px #7BC431, .5px -.5px 2px #7BC431, -.5px -.5px 2px #7BC431;
+}
+
+a.button,
+button, input {
+  background: none;
+  border: 0px solid #aa8422;
+  border-radius: 4px;
+  box-shadow: .25px .25px 2px #aa8422, -.25px .25px 2px #aa8422, .25px -.25px 2px #aa8422, -.25px -.25px 2px #aa8422;
+  color: #aa8422;
+  text-shadow: none;
+}
+
+a.button,
+button {
+  cursor: pointer;
+  padding: 0px 5px;
+  margin: 4px 3px;
+}
+
+input {
+  padding: 3px 5px;
+  margin: 4px 3px;
+}
