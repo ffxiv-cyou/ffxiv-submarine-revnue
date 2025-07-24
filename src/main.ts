@@ -14,6 +14,7 @@ var listNode = document.getElementById("item-list")!;
 var totalNode = document.getElementById("total-value")!;
 var rootNode = document.getElementById("app")!;
 var cfgNode = document.getElementById("config")!;
+var output = document.getElementById("output")!;
 
 var totalRevenue = 0;
 
@@ -47,8 +48,8 @@ var counter = new ItemCounter((name, items) => {
 
   if (cfg.webhook && cfg.token) {
     sendResult(cfg.webhook, cfg.token, name, items)
-      .then((res) => console.log(res))
-      .catch((err) => console.error(err));
+      .then((_) => {output.className = "success"; output.innerText = "上传成功";})
+      .catch((err) => {output.className = "fail"; output.innerText = err.toString();});
   }
 });
 
@@ -67,8 +68,8 @@ var cfgWebhook = document.getElementById("webhook")! as HTMLInputElement;
 var cfgToken = document.getElementById("token")! as HTMLInputElement;
 var testOutput = document.getElementById("test-output")!;
 
-function sendResult(webhook: string, token: string, ship: string, items: Item[]) {
-  return kdocs_webhook(webhook, token, {
+async function sendResult(webhook: string, token: string, ship: string, items: Item[]) {
+  let response = await kdocs_webhook(webhook, token, {
     data: items.map(item => {
       var info = itemMap.get(item.id);
       if (info == undefined)
@@ -85,6 +86,14 @@ function sendResult(webhook: string, token: string, ship: string, items: Item[])
       };
     }).filter(item => item !== undefined),
   });
+
+  var body = response.body as unknown as string;
+  var obj = JSON.parse(body);
+  if (response.ok) {
+    return obj;
+  }
+
+  throw new Error(obj.error || obj.msg || obj.reason || obj.result || body);
 }
 
 document.getElementById("test-cfg")!.onclick = (_) => {
@@ -94,10 +103,12 @@ document.getElementById("test-cfg")!.onclick = (_) => {
     new Item(22502, false, 3),
   ]).then((res) => {
     console.log(res);
-    testOutput.className = res.ok ? "success" : "fail";
-    testOutput.innerText = res.body as unknown as string;
-  })
-    .catch((err) => testOutput.innerText = err.toString());
+    testOutput.className = "success";
+    testOutput.innerText = "上传成功";
+  }).catch((err) => {
+    testOutput.innerText = err.toString();
+    testOutput.className = "fail";
+  });
 };
 
 document.getElementById("apply-cfg")!.onclick = (_) => {
