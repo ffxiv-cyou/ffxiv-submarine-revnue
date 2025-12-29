@@ -1,5 +1,5 @@
 import './style.css'
-import './ngld/common.js'
+import overlayToolkit from "overlay-toolkit";
 import { Item, ItemCounter, ItemInfo } from './item-counter';
 import ItemData from "./data.json";
 import { kdocs_webhook } from './kdocs';
@@ -60,7 +60,7 @@ document.getElementById("close")!.onclick = (evt) => {
   evt.preventDefault();
 };
 
-addOverlayListener("LogLine", (msg) => {
+overlayToolkit.AddListener("LogLine", (msg) => {
   counter.parseLogLines(msg.line);
 });
 
@@ -124,4 +124,4 @@ document.getElementById("setting")!.onclick = (_) => {
   testOutput.innerText = "";
 };
 
-startOverlayEvents();
+overlayToolkit.Start();

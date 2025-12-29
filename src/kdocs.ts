@@ -1,8 +1,8 @@
 
-import { Fetch } from "./ngld-extend";
+import overlayToolkit from "overlay-toolkit";
 
 export function kdocs_webhook(url: string, token: string, argv: any) {
-    return Fetch(url, {
+    return overlayToolkit.Fetch(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
