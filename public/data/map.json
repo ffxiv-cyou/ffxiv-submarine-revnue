@@ -1,0 +1,728 @@
+{
+  "maps": {
+    "1": "溺没海",
+    "2": "灰海",
+    "3": "翠浪海",
+    "4": "妖歌海",
+    "5": "紫礁海",
+    "6": "南苍茫洋",
+    "7": "北洋"
+  },
+  "explorations": [
+    {
+      "id": 1,
+      "mapId": 1,
+      "name": "A"
+    },
+    {
+      "id": 2,
+      "mapId": 1,
+      "name": "B"
+    },
+    {
+      "id": 3,
+      "mapId": 1,
+      "name": "C"
+    },
+    {
+      "id": 4,
+      "mapId": 1,
+      "name": "D"
+    },
+    {
+      "id": 5,
+      "mapId": 1,
+      "name": "E"
+    },
+    {
+      "id": 6,
+      "mapId": 1,
+      "name": "F"
+    },
+    {
+      "id": 7,
+      "mapId": 1,
+      "name": "G"
+    },
+    {
+      "id": 8,
+      "mapId": 1,
+      "name": "H"
+    },
+    {
+      "id": 9,
+      "mapId": 1,
+      "name": "I"
+    },
+    {
+      "id": 10,
+      "mapId": 1,
+      "name": "J"
+    },
+    {
+      "id": 11,
+      "mapId": 1,
+      "name": "K"
+    },
+    {
+      "id": 12,
+      "mapId": 1,
+      "name": "L"
+    },
+    {
+      "id": 13,
+      "mapId": 1,
+      "name": "M"
+    },
+    {
+      "id": 14,
+      "mapId": 1,
+      "name": "N"
+    },
+    {
+      "id": 15,
+      "mapId": 1,
+      "name": "O"
+    },
+    {
+      "id": 16,
+      "mapId": 1,
+      "name": "P"
+    },
+    {
+      "id": 17,
+      "mapId": 1,
+      "name": "Q"
+    },
+    {
+      "id": 18,
+      "mapId": 1,
+      "name": "R"
+    },
+    {
+      "id": 19,
+      "mapId": 1,
+      "name": "S"
+    },
+    {
+      "id": 20,
+      "mapId": 1,
+      "name": "T"
+    },
+    {
+      "id": 21,
+      "mapId": 1,
+      "name": "U"
+    },
+    {
+      "id": 22,
+      "mapId": 1,
+      "name": "V"
+    },
+    {
+      "id": 23,
+      "mapId": 1,
+      "name": "W"
+    },
+    {
+      "id": 24,
+      "mapId": 1,
+      "name": "X"
+    },
+    {
+      "id": 25,
+      "mapId": 1,
+      "name": "Y"
+    },
+    {
+      "id": 26,
+      "mapId": 1,
+      "name": "Z"
+    },
+    {
+      "id": 27,
+      "mapId": 1,
+      "name": "AA"
+    },
+    {
+      "id": 28,
+      "mapId": 1,
+      "name": "AB"
+    },
+    {
+      "id": 29,
+      "mapId": 1,
+      "name": "AC"
+    },
+    {
+      "id": 30,
+      "mapId": 1,
+      "name": "AD"
+    },
+    {
+      "id": 31,
+      "mapId": 2,
+      "name": ""
+    },
+    {
+      "id": 32,
+      "mapId": 2,
+      "name": "A"
+    },
+    {
+      "id": 33,
+      "mapId": 2,
+      "name": "B"
+    },
+    {
+      "id": 34,
+      "mapId": 2,
+      "name": "C"
+    },
+    {
+      "id": 35,
+      "mapId": 2,
+      "name": "D"
+    },
+    {
+      "id": 36,
+      "mapId": 2,
+      "name": "E"
+    },
+    {
+      "id": 37,
+      "mapId": 2,
+      "name": "F"
+    },
+    {
+      "id": 38,
+      "mapId": 2,
+      "name": "G"
+    },
+    {
+      "id": 39,
+      "mapId": 2,
+      "name": "H"
+    },
+    {
+      "id": 40,
+      "mapId": 2,
+      "name": "I"
+    },
+    {
+      "id": 41,
+      "mapId": 2,
+      "name": "J"
+    },
+    {
+      "id": 42,
+      "mapId": 2,
+      "name": "K"
+    },
+    {
+      "id": 43,
+      "mapId": 2,
+      "name": "L"
+    },
+    {
+      "id": 44,
+      "mapId": 2,
+      "name": "M"
+    },
+    {
+      "id": 45,
+      "mapId": 2,
+      "name": "N"
+    },
+    {
+      "id": 46,
+      "mapId": 2,
+      "name": "O"
+    },
+    {
+      "id": 47,
+      "mapId": 2,
+      "name": "P"
+    },
+    {
+      "id": 48,
+      "mapId": 2,
+      "name": "Q"
+    },
+    {
+      "id": 49,
+      "mapId": 2,
+      "name": "R"
+    },
+    {
+      "id": 50,
+      "mapId": 2,
+      "name": "S"
+    },
+    {
+      "id": 51,
+      "mapId": 2,
+      "name": "T"
+    },
+    {
+      "id": 52,
+      "mapId": 3,
+      "name": ""
+    },
+    {
+      "id": 53,
+      "mapId": 3,
+      "name": "A"
+    },
+    {
+      "id": 54,
+      "mapId": 3,
+      "name": "B"
+    },
+    {
+      "id": 55,
+      "mapId": 3,
+      "name": "C"
+    },
+    {
+      "id": 56,
+      "mapId": 3,
+      "name": "D"
+    },
+    {
+      "id": 57,
+      "mapId": 3,
+      "name": "E"
+    },
+    {
+      "id": 58,
+      "mapId": 3,
+      "name": "F"
+    },
+    {
+      "id": 59,
+      "mapId": 3,
+      "name": "G"
+    },
+    {
+      "id": 60,
+      "mapId": 3,
+      "name": "H"
+    },
+    {
+      "id": 61,
+      "mapId": 3,
+      "name": "I"
+    },
+    {
+      "id": 62,
+      "mapId": 3,
+      "name": "J"
+    },
+    {
+      "id": 63,
+      "mapId": 3,
+      "name": "K"
+    },
+    {
+      "id": 64,
+      "mapId": 3,
+      "name": "L"
+    },
+    {
+      "id": 65,
+      "mapId": 3,
+      "name": "M"
+    },
+    {
+      "id": 66,
+      "mapId": 3,
+      "name": "N"
+    },
+    {
+      "id": 67,
+      "mapId": 3,
+      "name": "O"
+    },
+    {
+      "id": 68,
+      "mapId": 3,
+      "name": "P"
+    },
+    {
+      "id": 69,
+      "mapId": 3,
+      "name": "Q"
+    },
+    {
+      "id": 70,
+      "mapId": 3,
+      "name": "R"
+    },
+    {
+      "id": 71,
+      "mapId": 3,
+      "name": "S"
+    },
+    {
+      "id": 72,
+      "mapId": 3,
+      "name": "T"
+    },
+    {
+      "id": 73,
+      "mapId": 4,
+      "name": ""
+    },
+    {
+      "id": 74,
+      "mapId": 4,
+      "name": "A"
+    },
+    {
+      "id": 75,
+      "mapId": 4,
+      "name": "B"
+    },
+    {
+      "id": 76,
+      "mapId": 4,
+      "name": "C"
+    },
+    {
+      "id": 77,
+      "mapId": 4,
+      "name": "D"
+    },
+    {
+      "id": 78,
+      "mapId": 4,
+      "name": "E"
+    },
+    {
+      "id": 79,
+      "mapId": 4,
+      "name": "F"
+    },
+    {
+      "id": 80,
+      "mapId": 4,
+      "name": "G"
+    },
+    {
+      "id": 81,
+      "mapId": 4,
+      "name": "H"
+    },
+    {
+      "id": 82,
+      "mapId": 4,
+      "name": "I"
+    },
+    {
+      "id": 83,
+      "mapId": 4,
+      "name": "J"
+    },
+    {
+      "id": 84,
+      "mapId": 4,
+      "name": "K"
+    },
+    {
+      "id": 85,
+      "mapId": 4,
+      "name": "L"
+    },
+    {
+      "id": 86,
+      "mapId": 4,
+      "name": "M"
+    },
+    {
+      "id": 87,
+      "mapId": 4,
+      "name": "N"
+    },
+    {
+      "id": 88,
+      "mapId": 4,
+      "name": "O"
+    },
+    {
+      "id": 89,
+      "mapId": 4,
+      "name": "P"
+    },
+    {
+      "id": 90,
+      "mapId": 4,
+      "name": "Q"
+    },
+    {
+      "id": 91,
+      "mapId": 4,
+      "name": "R"
+    },
+    {
+      "id": 92,
+      "mapId": 4,
+      "name": "S"
+    },
+    {
+      "id": 93,
+      "mapId": 4,
+      "name": "T"
+    },
+    {
+      "id": 94,
+      "mapId": 5,
+      "name": ""
+    },
+    {
+      "id": 95,
+      "mapId": 5,
+      "name": "A"
+    },
+    {
+      "id": 96,
+      "mapId": 5,
+      "name": "B"
+    },
+    {
+      "id": 97,
+      "mapId": 5,
+      "name": "C"
+    },
+    {
+      "id": 98,
+      "mapId": 5,
+      "name": "D"
+    },
+    {
+      "id": 99,
+      "mapId": 5,
+      "name": "E"
+    },
+    {
+      "id": 100,
+      "mapId": 5,
+      "name": "F"
+    },
+    {
+      "id": 101,
+      "mapId": 5,
+      "name": "G"
+    },
+    {
+      "id": 102,
+      "mapId": 5,
+      "name": "H"
+    },
+    {
+      "id": 103,
+      "mapId": 5,
+      "name": "I"
+    },
+    {
+      "id": 104,
+      "mapId": 5,
+      "name": "J"
+    },
+    {
+      "id": 105,
+      "mapId": 5,
+      "name": "K"
+    },
+    {
+      "id": 106,
+      "mapId": 5,
+      "name": "L"
+    },
+    {
+      "id": 107,
+      "mapId": 5,
+      "name": "M"
+    },
+    {
+      "id": 108,
+      "mapId": 5,
+      "name": "N"
+    },
+    {
+      "id": 109,
+      "mapId": 5,
+      "name": "O"
+    },
+    {
+      "id": 110,
+      "mapId": 5,
+      "name": "P"
+    },
+    {
+      "id": 111,
+      "mapId": 5,
+      "name": "Q"
+    },
+    {
+      "id": 112,
+      "mapId": 5,
+      "name": "R"
+    },
+    {
+      "id": 113,
+      "mapId": 5,
+      "name": "S"
+    },
+    {
+      "id": 114,
+      "mapId": 5,
+      "name": "T"
+    },
+    {
+      "id": 115,
+      "mapId": 6,
+      "name": ""
+    },
+    {
+      "id": 116,
+      "mapId": 6,
+      "name": "A"
+    },
+    {
+      "id": 117,
+      "mapId": 6,
+      "name": "B"
+    },
+    {
+      "id": 118,
+      "mapId": 6,
+      "name": "C"
+    },
+    {
+      "id": 119,
+      "mapId": 6,
+      "name": "D"
+    },
+    {
+      "id": 120,
+      "mapId": 6,
+      "name": "E"
+    },
+    {
+      "id": 121,
+      "mapId": 6,
+      "name": "F"
+    },
+    {
+      "id": 122,
+      "mapId": 6,
+      "name": "G"
+    },
+    {
+      "id": 123,
+      "mapId": 6,
+      "name": "H"
+    },
+    {
+      "id": 124,
+      "mapId": 6,
+      "name": "I"
+    },
+    {
+      "id": 125,
+      "mapId": 6,
+      "name": "J"
+    },
+    {
+      "id": 126,
+      "mapId": 6,
+      "name": "K"
+    },
+    {
+      "id": 127,
+      "mapId": 6,
+      "name": "L"
+    },
+    {
+      "id": 128,
+      "mapId": 6,
+      "name": "M"
+    },
+    {
+      "id": 129,
+      "mapId": 6,
+      "name": "N"
+    },
+    {
+      "id": 130,
+      "mapId": 6,
+      "name": "O"
+    },
+    {
+      "id": 131,
+      "mapId": 6,
+      "name": "P"
+    },
+    {
+      "id": 132,
+      "mapId": 6,
+      "name": "Q"
+    },
+    {
+      "id": 133,
+      "mapId": 6,
+      "name": "R"
+    },
+    {
+      "id": 134,
+      "mapId": 6,
+      "name": "S"
+    },
+    {
+      "id": 135,
+      "mapId": 6,
+      "name": "T"
+    },
+    {
+      "id": 136,
+      "mapId": 7,
+      "name": ""
+    },
+    {
+      "id": 137,
+      "mapId": 7,
+      "name": "A"
+    },
+    {
+      "id": 138,
+      "mapId": 7,
+      "name": "B"
+    },
+    {
+      "id": 139,
+      "mapId": 7,
+      "name": "C"
+    },
+    {
+      "id": 140,
+      "mapId": 7,
+      "name": "D"
+    },
+    {
+      "id": 141,
+      "mapId": 7,
+      "name": "E"
+    },
+    {
+      "id": 142,
+      "mapId": 7,
+      "name": "F"
+    },
+    {
+      "id": 143,
+      "mapId": 7,
+      "name": "G"
+    }
+  ]
+}

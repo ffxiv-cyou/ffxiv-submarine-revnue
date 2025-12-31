@@ -1,3 +1,5 @@
+import { OverlayToolkit } from "overlay-toolkit";
+
 export class RingBuffer<T> {
     array: T[];
     capacity: number;
@@ -45,29 +47,6 @@ export class RingBuffer<T> {
     }
 }
 
-export class Item {
-    id: number;
-    amount: number;
-    hq: boolean;
-
-    constructor(id: number, hq: boolean, amount: number) {
-        this.id = id;
-        this.hq = hq;
-        this.amount = amount;
-    }
-
-    static parse(combinedID: number, amount: number) {
-        return new Item(combinedID % 1000000, combinedID >= 1000000, amount);
-    }
-}
-
-export class ItemInfo {
-    Id!: number;
-    Name!: string;
-    PriceLow!: number;
-    PriceMid!: number;
-}
-
 class ItemLog {
     itemID: number;
     amount: number;
@@ -80,12 +59,21 @@ class ItemLog {
     }
 }
 
-export class ItemCounter {
+/**
+ * 基于日志行的物品计数器
+ */
+export class LogCounter {
     buffer: RingBuffer<ItemLog>;
     callback: (name: string, items: Item[]) => void;
     constructor(callback: (name: string, items: Item[]) => void) {
         this.buffer = new RingBuffer<ItemLog>(100);
         this.callback = callback;
+    }
+
+    public init(otk: OverlayToolkit): void {
+        otk.AddListener("LogLine", (msg) => {
+            this.parseLogLines(msg.line);
+        });
     }
 
     public parseLogLines(lines: string[]) {
@@ -150,11 +138,16 @@ export class ItemCounter {
 
         let items: Item[] = [];
         itemMap.forEach((value, key) => {
-            var item = Item.parse(key, value);
+            var item = {
+                id: key % 1000000, 
+                hq: key >= 1000000,
+                amount: value
+            };
             items.push(item);
         });
 
-        this.callback(name, items);
+        if (this.callback)
+            this.callback(name, items);
     }
 
     enqueueItem(id: number, amount: number) {

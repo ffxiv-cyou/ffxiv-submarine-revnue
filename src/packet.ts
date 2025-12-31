@@ -86,11 +86,7 @@ export class SubmarineStatusListItem {
     stern: number;
     bow: number;
     bridge: number;
-    dest1: number;
-    dest2: number;
-    dest3: number;
-    dest4: number;
-    dest5: number;
+    dests: number[];
 
     constructor(dw: DataView, offset: number) {
         this.status = dw.getUint16(offset + 0, true);
@@ -115,11 +111,15 @@ export class SubmarineStatusListItem {
         this.stern = dw.getUint16(offset + 48, true);
         this.bow = dw.getUint16(offset + 50, true);
         this.bridge = dw.getUint16(offset + 52, true);
-        this.dest1 = dw.getUint8(offset + 54);
-        this.dest2 = dw.getUint8(offset + 55);
-        this.dest3 = dw.getUint8(offset + 56);
-        this.dest4 = dw.getUint8(offset + 57);
-        this.dest5 = dw.getUint8(offset + 58);
+        this.dests = [];
+        for (let i = 0; i < 5; i++){
+            const dest = dw.getUint8(offset + 54 + i);
+            if (dest != 0) {
+                this.dests.push(dest);
+            } else {
+                break;
+            }
+        }
     }
 }
 
@@ -159,7 +159,7 @@ export class submarineExplorationResultItem {
     item1IsHq: boolean;
     item2IsHq: boolean;
 
-    item1IsNormal: number;
+    item1IsNormal: number; // 0 = tier 3 pool, 1 = other
     item2IsNormal: number;
 
     loot1SurveillanceResult: number;
