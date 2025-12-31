@@ -135,7 +135,10 @@ export class FFXIVIpcSubmarineExplorationResult extends IpcPacket {
         this.rating = dw.getUint16(offset + 0, true);
         this.marineSpeed = dw.getUint16(offset + 2, true);
         for (let i = 0; i < 5; i++) {
-            this.items.push(new submarineExplorationResultItem(dw, offset + 4 + i * 56));
+            const item = new submarineExplorationResultItem(dw, offset + 4 + i * 56);
+            if (item.destId === 0)
+                continue;
+            this.items.push(item);
         }
     }
 }

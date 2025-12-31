@@ -1,5 +1,6 @@
 import { OverlayToolkit, Packet, PacketFilter } from "overlay-toolkit";
 import { FFXIVIpcActorControlSelf, FFXIVIpcSubmarineExplorationResult, FFXIVIpcSubmarineStatusList, submarineExplorationResultItem, SubmarineStatusListItem } from "./packet";
+import { ExplorationResult, ExplorationItemExtended } from "./types";
 
 interface OpcodeMap {
     [key: string]: number;
@@ -19,7 +20,7 @@ enum ShipStatus {
 
 const Direction = {
     [PacketType.ActorControlSelf]: false,
-    [PacketType.SubmarineExplorationResult]: true,
+    [PacketType.SubmarineExplorationResult]: false,
     [PacketType.SubmarineStatusList]: false,
 }
 

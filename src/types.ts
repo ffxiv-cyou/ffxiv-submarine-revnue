@@ -1,4 +1,5 @@
-interface Item {
+
+export interface Item {
     /**
      * 物品ID
      */
@@ -13,7 +14,7 @@ interface Item {
     hq: boolean;
 }
 
-interface ExplorationItem extends Item {
+export interface ExplorationItem extends Item {
     /**
      * 探索情况
      */
@@ -28,7 +29,7 @@ interface ExplorationItem extends Item {
     discoveryDesc: number;
 }
 
-interface ExplorationItemExtended extends ExplorationItem {
+export interface ExplorationItemExtended extends ExplorationItem {
     /**
      * 恩惠状态
      */
@@ -52,7 +53,7 @@ interface ExplorationItemExtended extends ExplorationItem {
     rating: number;
 }
 
-interface ExplorationResult {
+export interface ExplorationResult {
     /**
      * 登记时间（Unix时间戳）
      */

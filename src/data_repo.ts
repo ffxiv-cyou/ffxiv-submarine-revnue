@@ -31,7 +31,7 @@ export class DataRepo {
             data.forEach(item => {
                 this.itemMap.set(item.Id, item);
             });
-            console.log("Loaded item data", data);
+            console.log("Loaded item data", data.length);
         });
 
         fetch("data/map.json").then(res => {
@@ -54,7 +54,7 @@ export class DataRepo {
         return id.toString();
     }
 
-    public price(id: number, hq: boolean): number {
+    public price(id: number): number {
         const info = this.itemMap.get(id);
         if (info) {
             return info.PriceLow;

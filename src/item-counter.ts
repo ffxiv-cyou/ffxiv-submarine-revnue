@@ -1,4 +1,5 @@
 import { OverlayToolkit } from "overlay-toolkit";
+import { Item } from "./types";
 
 export class RingBuffer<T> {
     array: T[];

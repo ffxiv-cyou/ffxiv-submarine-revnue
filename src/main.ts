@@ -5,6 +5,7 @@ import { Uploader } from './uploader';
 import { Config, read_config, write_config } from './config';
 import { repo } from './data_repo';
 import { PacketBasedCounter } from './packet-counter';
+import { ExplorationResult, Item } from './types';
 
 var cfg: Config = read_config();
 var totalRevenue = 0;
@@ -146,6 +147,7 @@ function showPromiseError<T>(elem: HTMLElement, promise: Promise<T>) {
     elem.className = "success";
     elem.innerText = "上传成功";
   }).catch((err) => {
+    console.log(err);
     elem.className = "fail";
     elem.innerText = err.toString();
   });

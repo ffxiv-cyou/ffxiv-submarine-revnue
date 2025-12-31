@@ -1,6 +1,7 @@
 
 import overlayToolkit from "overlay-toolkit";
 import { repo } from "./data_repo";
+import { Item, ExplorationResult, ExplorationItemExtended } from "./types";
 
 export class Uploader {
     webhook: string;
@@ -113,7 +114,7 @@ class ItemRowV1 implements ITableRow, Item {
 
     ToRow(): { [key: string]: string | number | boolean; } {
         const name = repo.name(this.id);
-        const price = repo.price(this.id, this.hq);
+        const price = repo.price(this.id);
         return {
           '潜艇名': this.ship,
           '物品名': name,
@@ -165,8 +166,8 @@ class ItemRowV2 implements ITableRow, ExplorationItemExtended {
 
     ToRow(): { [key: string]: string | number | boolean; } {
         const name = repo.name(this.id);
-        const price = repo.price(this.id, this.hq);
-        const parts = [this.parts[2], this.parts[3], this.parts[0], this.parts[1]].map(partId => repo.getPartName(partId));
+        const price = repo.price(this.id);
+        const parts = this.parts.map(partId => repo.getPartName(partId));
         return {
           '潜艇名': this.ship,
           '航线': this.dests.map(destId => repo.getDestName(destId)).join(""),
@@ -178,7 +179,7 @@ class ItemRowV2 implements ITableRow, ExplorationItemExtended {
           '数量': this.amount,
           '单价': price,
           '总价': price! * this.amount,
-          '探索情况': this.surveillance,
+          '探索情况': 7 - this.surveillance,
           '收集情况': this.retrieval,
           '收集描述': this.discoveryDesc,
           '恩惠状态': this.doubleDip,
