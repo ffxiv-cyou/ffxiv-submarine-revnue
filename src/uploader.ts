@@ -57,12 +57,12 @@ export class Uploader {
     }
 
     public async kdocsUploadV1(ship: string, items: Item[]): Promise<any> {
-        const rows = items.map(item => new ItemRowV1(ship, item));
+        const rows = items.filter(item => repo.isBuiltinItem(item.id)).map(item => new ItemRowV1(ship, item));
         return this.kdocsInsertRows(rows);
     }
 
     public async kdocsUploadV1Ex(result: ExplorationResult): Promise<any> {
-        const rows = result.items.map(item => new ItemRowV1(result.name, item));
+        const rows = result.items.filter(item => repo.isBuiltinItem(item.id)).map(item => new ItemRowV1(result.name, item));
         return this.kdocsInsertRows(rows);
     }
 

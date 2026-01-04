@@ -62,6 +62,11 @@ export class DataRepo {
         return 0;
     }
 
+    public isBuiltinItem(id: number): boolean {
+        const info = builtIn.find(item => item.Id === id);
+        return info !== undefined;
+    }
+
     public getRating(rating: number): string {
         switch (rating) {
             case 0: return "SS";

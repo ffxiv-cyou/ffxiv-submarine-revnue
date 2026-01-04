@@ -68,6 +68,9 @@ function addShipResult(name: string, items: Item[]) {
 
   var totalVal = 0;
   items.forEach(item => {
+    if (!repo.isBuiltinItem(item.id))
+      return;
+
     var info = repo.getItemInfo(item.id);
     if (info === undefined)
       return;
