@@ -1,5 +1,100 @@
 [
   {
+    "Id": 1,
+    "Name": "金币",
+    "PriceLow": 0
+  },
+  {
+    "Id": 2,
+    "Name": "火之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 3,
+    "Name": "冰之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 4,
+    "Name": "风之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 5,
+    "Name": "土之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 6,
+    "Name": "雷之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 7,
+    "Name": "水之碎晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 8,
+    "Name": "火之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 9,
+    "Name": "冰之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 10,
+    "Name": "风之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 11,
+    "Name": "土之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 12,
+    "Name": "雷之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 13,
+    "Name": "水之水晶",
+    "PriceLow": 0
+  },
+  {
+    "Id": 14,
+    "Name": "火之晶簇",
+    "PriceLow": 0
+  },
+  {
+    "Id": 15,
+    "Name": "冰之晶簇",
+    "PriceLow": 0
+  },
+  {
+    "Id": 16,
+    "Name": "风之晶簇",
+    "PriceLow": 0
+  },
+  {
+    "Id": 17,
+    "Name": "土之晶簇",
+    "PriceLow": 0
+  },
+  {
+    "Id": 18,
+    "Name": "雷之晶簇",
+    "PriceLow": 0
+  },
+  {
+    "Id": 19,
+    "Name": "水之晶簇",
+    "PriceLow": 0
+  },
+  {
     "Id": 100,
     "Name": "过期青铜步兵剑",
     "PriceLow": 2
