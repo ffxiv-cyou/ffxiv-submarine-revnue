@@ -78,7 +78,7 @@ export class Uploader {
         const key = result.registerTime + "_" + result.returnTime + "_" + result.name;
         const encoder = new TextEncoder();
         const data = encoder.encode(key);
-        const hash = await new SubtleCrypto().digest("SHA-1", data);
+        const hash = await window.crypto.subtle.digest("SHA-1", data);
         const hashHex = Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
         payload.digest = hashHex;
         payload.name = "";
