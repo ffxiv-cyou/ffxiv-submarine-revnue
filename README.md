@@ -3,3 +3,5 @@
 收艇的时候自动计算收益。
 
 使用方法：悬浮窗添加 https://submarine.ffxiv.cyou
+
+或者查看帮助文档: https://ffxiv.cyou/pages/submarine/
