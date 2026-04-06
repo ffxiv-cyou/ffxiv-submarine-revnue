@@ -13,5 +13,8 @@
     "typescript": "^4.9.3",
     "vite": "^6.2.1",
     "vite-plugin-singlefile": "^2.1.0"
+  },
+  "dependencies": {
+    "@sentry/browser": "^10.47.0"
   }
 }

@@ -6,6 +6,7 @@ import { Config, read_config, write_config } from './config';
 import { repo } from './data_repo';
 import { PacketBasedCounter } from './packet-counter';
 import { ExplorationResult, Item } from './types';
+import * as Sentry from "@sentry/browser";
 
 var cfg: Config = read_config();
 var totalRevenue = 0;
@@ -14,6 +15,10 @@ var usePacketBasedCounter = false; // 是否使用基于数据包的解析方式
 const uploader = new Uploader(cfg.webhook, cfg.token);
 const logCounter = new LogCounter(logCounterHandler); // 传统的日志解析方式
 const packetCounter = new PacketBasedCounter(packetCounterHandler); // 基于数据包的解析方式
+
+Sentry.init({
+  dsn: "https://65ae8544b8424726b9ab8cf4a596e68e@sentry.ffxiv.cyou/7",
+});
 
 /**
  * 日志解析回调
