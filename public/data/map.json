@@ -723,6 +723,36 @@
       "id": 143,
       "mapId": 7,
       "name": "G"
+    },
+    {
+      "id": 144,
+      "mapId": 7,
+      "name": "H"
+    },
+    {
+      "id": 145,
+      "mapId": 7,
+      "name": "I"
+    },
+    {
+      "id": 146,
+      "mapId": 7,
+      "name": "J"
+    },
+    {
+      "id": 147,
+      "mapId": 7,
+      "name": "K"
+    },
+    {
+      "id": 148,
+      "mapId": 7,
+      "name": "L"
+    },
+    {
+      "id": 149,
+      "mapId": 7,
+      "name": "M"
     }
   ]
 }
